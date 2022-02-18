@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+
+}
+
+html {
+  background: #b3b3b3;
+  padding: 15px;
+  border: 5px solid white;
+  margin: 15px;
+  height: 1500px;
+}
+
+body {
+  background: #fa923f;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 0;
+  height: 1460px;
+}
+
+.sticky-nav {
+  background: #ff6d6d;
+  height: 75px;
+  top: 20px;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin-bottom: 30px;
+  position: sticky;
+  font-size: xx-large;
+}
+
+.hero-header-image {
+  height: 528px;
+  border: 5px solid black;
+  background: radial-gradient(circle at 100%, #333, #333 30%, #eee 75%, #333 75%);
+  /* background: url() */
+}
+
+.parent {
+  background: #45d645;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 20px 20px 20px 0px;
+  width: 60%;
+  height: 450px;
+  float: left;
+}
+
+.child {
+  background: #69696d;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 20px;
+}
+
+.copyright {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 15px;
+}
+
+.aside {
+  background: white;
+  padding: 20px;
+  border: 5px solid black;
+  width: 38%;
+  float: right;
+}
+
+.tweeter-aside {
+  margin-top: 20px;
+  height: 245px;
+}
+
+.post-aside {
+  margin-top: 5px;
+  height: 200px;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  float: right;
+}
+
+.blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.footer {
+  background: #4d4df8;
+  height: 300px;
+  color: white;
+  padding: 10px;
+  margin-top: 480px;
+  border: 5px solid black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: xx-large;
+}
