@@ -18,7 +18,7 @@ Well, you are not wrong, but first we need to talk about the syntax extension th
 ### What's Next
 You've done it! You've rendered your first React components using JSX! 🎉 
 
-There is one more lesson visualizing the structure of a React Application using components and JS. Then we will be working with TS and the React library itself. See [03-create-react-app](../03-create-react-app/) for how to use `create-react-app` for details.
+There is one more lesson visualizing the structure of a React Application using components and JS. Then we will be working with TS and the React library itself.
 
 #### Recommended Plugins 
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
