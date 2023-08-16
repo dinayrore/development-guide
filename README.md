@@ -1,4 +1,5 @@
-## A Guide to Web Development
+## Development Guide 
+A collection of lessons and notes on web development, react native, accessibility and all things I have have learned and practiced as a software engineer. 
 
 ### Introduction 
 Learning is a passion of mine, and in the field of software engineering, learning is constant! As I was going through my own self studies, I decided to adapt the source material I was learning from into my own lessons to better reinforce my knowledge and be able to share the lessons I have learned with others thorugh a different media.  

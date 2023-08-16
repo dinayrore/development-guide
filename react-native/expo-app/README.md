@@ -28,10 +28,21 @@ React Native Expo supports the development of iOS and Android apps using the fol
 - Run `yarn android` to open an Android emulator.
 - Run `yarn ios` to open an iOS simulator.
 
+
+## Lessons
+  - [Whiteboarding](https://www.figma.com/file/JrnNxfLKfdJryRM5am7uOY/Untitled?type=whiteboard&node-id=2-1486&t=du9w6ZFUoJvvgF29-0)
+  - Login Feature: Components, Hooks, Contexts, and Navigation - `feature/react-native-expo/login`
+  
+### Helpful Emoji 
+Each exercise has comments in it to guide you through the exercise. 
+Below is the Emoji Comment Key:
+
+  - 🔗 = links to documentation
+  - 🧩 = React Component suggestions
+
 ## Additional Tooling
 
 This project uses **TypeScript**, **ESLint** and **Prettier** to enhance code quality. Configuration details for each can be found in the [tsconfig.json](./tsconfig.json), `.eslintrc`, `.prettierrc` files respectively.
-
 
 ## Resources
 - [Expo](https://docs.expo.dev/introduction/expo/) is an open source platform for making universal native apps for Android and iOS.
