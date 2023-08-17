@@ -43,12 +43,11 @@ const AuthenticationProvider = ({ children }: AuthenticationProviderProps) => {
 
     if (!emailMessage && !passwordMessage) {
       setUser(authenticatedUser);
+      // where do we want the user to go after login?
       // navigation.navigate();
       return;
-    }
-
-    const toastMessage = constructErrorMessage(emailMessage, passwordMessage);
-    if (toastMessage) {
+    } else {
+      const toastMessage = constructErrorMessage(emailMessage, passwordMessage);
       showNavi(toastMessage);
     }
   }, [email, password, showNavi]);
@@ -71,7 +70,7 @@ const AuthenticationProvider = ({ children }: AuthenticationProviderProps) => {
           "@AuthenticatedUser",
           JSON.stringify(registeredUser),
         );
-
+        // where do we want the user to go after registration?
         // navigation.navigate();
       } else {
         const message = `${nameMessage}\n${emailMessage}\n${passwordMessage} `;
@@ -84,6 +83,7 @@ const AuthenticationProvider = ({ children }: AuthenticationProviderProps) => {
 
   const onLogout = useCallback(() => {
     setUser(null);
+    // where do we want the user to go after logout?
     // navigation.navigate();
   }, []);
 
