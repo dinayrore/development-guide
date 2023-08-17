@@ -2,14 +2,11 @@ import React from "react";
 import { renderWrapper } from "jest/helpers";
 import MenuDrawer from "./MenuDrawer";
 import { fireEvent, waitFor } from "@testing-library/react-native";
-import {
-  TEST_IS_AUTHENTICATED,
-  TEST_USER,
-  mockNavigation,
-} from "jest/constants";
+import { mockNavigation } from "jest/constants";
 import { ButtonText } from "components/Button/constants";
 import { RootStackRouteNames } from "navigation/constants";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { TEST_IS_AUTHENTICATED, TEST_USER } from "services/data/fixtures";
 
 describe("<MenuDrawer />", () => {
   it("renders a MenuDrawer with a login button", () => {

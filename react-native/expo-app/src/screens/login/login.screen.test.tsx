@@ -1,13 +1,12 @@
 import React from "react";
 import { renderWrapper } from "jest/helpers";
 import LoginScreen from "./login.screen";
+import { jestSpyOnNavigationNavigate, navigationProps } from "jest/constants";
 import {
   TEST_AUTHENTICATION_CONTEXT_USER,
   TEST_IS_AUTHENTICATED,
   TEST_USER,
-  jestSpyOnNavigationNavigate,
-  navigationProps,
-} from "jest/constants";
+} from "services/data/fixtures";
 import { fireEvent } from "@testing-library/react-native";
 import { LoginScreenText } from "./constants";
 import { RootStackRouteNames } from "navigation/constants";

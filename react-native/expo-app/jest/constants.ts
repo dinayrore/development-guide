@@ -1,4 +1,5 @@
 import { AuthenticationContextType } from "contexts/authentication/types";
+import { TEST_USER } from "services/data/fixtures";
 import { User } from "services/data/types";
 
 // Mock Drawer dispatch for React Native Navigation
@@ -25,15 +26,6 @@ export const jestSpyOnNavigationNavigate = jest.spyOn(
   mockedNavigationNavigate,
   "navigate",
 );
-
-export const TEST_IS_AUTHENTICATED = true;
-
-export const TEST_USER: User = {
-  id: "#1-princess-hyrule",
-  name: "Princess Zelda",
-  email: "zelda@hyrule.com",
-  password: "SUPERsecretP@ssw0rd",
-};
 
 export const TEST_AUTHENTICATION_CONTEXT_NULL_USER: AuthenticationContextType =
   {

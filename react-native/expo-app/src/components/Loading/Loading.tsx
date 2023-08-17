@@ -6,7 +6,11 @@ import { theme } from "theme/theme";
 const Loading = () => {
   return (
     <View style={styles.container}>
-      <ActivityIndicator size="large" color={theme.colors.ultraViolet} />
+      <ActivityIndicator
+        size="large"
+        color={theme.colors.ultraViolet}
+        testID="activity-indicator"
+      />
     </View>
   );
 };

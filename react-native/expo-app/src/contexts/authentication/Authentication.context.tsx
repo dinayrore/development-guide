@@ -1,17 +1,7 @@
 import { createContext } from "react";
 import { AuthenticationContextType } from "./types";
+import { DEFAULT_AUTHENTICATION_CONTEXT_VALUE } from "services/data/fixtures";
 
-export const AuthenticationContext = createContext<AuthenticationContextType>({
-  isAuthenticated: false,
-  user: null,
-  isLoading: false,
-  onLogin: () => {},
-  onLogout: () => {},
-  onRegister: () => {},
-  email: "",
-  setEmail: () => {},
-  password: "",
-  setPassword: () => {},
-  name: "",
-  setName: () => {},
-});
+export const AuthenticationContext = createContext<AuthenticationContextType>(
+  DEFAULT_AUTHENTICATION_CONTEXT_VALUE,
+);

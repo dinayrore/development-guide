@@ -6,5 +6,4 @@ export const styles = StyleSheet.create({
     marginLeft: theme.spacing.md,
     color: theme.colors.black,
   },
-  shoppingCartIcon: { marginRight: theme.spacing.md },
 });

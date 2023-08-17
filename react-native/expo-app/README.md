@@ -39,6 +39,9 @@ Below is the Emoji Comment Key:
 
   - 🔗 = links to documentation
   - 🧩 = React Component suggestions
+  - 🪄 = line of code that can be uncommented to help you get started
+  - ❓ = what to ask yourself to help you solve the problem
+  - ❗️ = ah ha moments or clues
 
 ## Additional Tooling
 
