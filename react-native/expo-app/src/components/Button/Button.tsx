@@ -1,19 +1,37 @@
-// import React, { ReactNode } from "react";
-// import { Pressable, StyleProp, Text, TextStyle, ViewStyle } from "react-native";
+import React, { ReactNode } from "react";
+import { Pressable, StyleProp, Text, TextStyle, ViewStyle } from "react-native";
+import { ButtonText } from "./constants";
 // import styles from "./Button.styles";
 
-/**
- * Define the Button component interface
- * What properties do we need to pass to our Button component?
- * Examples:
- * @param buttonText - The text to display on the button
- * @param onPress - The function to call when the button is pressed
- */
+interface ButtonProps {
+  buttonText: ButtonText;
+  onPress: () => void;
+  buttonStyle?: StyleProp<ViewStyle>;
+  buttonTextStyle?: StyleProp<TextStyle>;
+  disabled?: boolean;
+  children?: ReactNode;
+}
 
-const Button = () => {
-  // 🔗 https://reactnative.dev/docs/button
-  // 🧩 Pressable
-  // 🧩 Text
+// 🧩 Button
+// 🔗 https://reactnative.dev/docs/button
+// 🧩 Pressable
+// 🔗 https://reactnative.dev/docs/pressable
+// 🧩 Text
+// 🔗 https://reactnative.dev/docs/text
+
+const Button = ({
+  buttonText,
+  onPress,
+  buttonTextStyle,
+  buttonStyle,
+  disabled = false,
+  children,
+}: ButtonProps) => {
+  return (
+    <Pressable>
+      <Text>Button</Text>
+    </Pressable>
+  );
 };
 
 export default Button;
