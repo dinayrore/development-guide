@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import { Pressable, StyleProp, Text, TextStyle, ViewStyle } from "react-native";
 import { ButtonText } from "./constants";
-// import styles from "./Button.styles";
+import styles from "./Button.styles";
 
 interface ButtonProps {
   buttonText: ButtonText;
@@ -28,8 +28,10 @@ const Button = ({
   children,
 }: ButtonProps) => {
   return (
-    <Pressable>
-      <Text>Button</Text>
+    <Pressable style={[styles.buttonStyle, buttonStyle]} onPress={onPress}>
+      <Text style={[styles.buttonTextStyle, buttonTextStyle]}>
+        {buttonText}
+      </Text>
     </Pressable>
   );
 };

@@ -8,6 +8,7 @@ import MenuDrawer from "components/MenuDrawer/MenuDrawer";
 import useAuth from "hooks/useAuth";
 import LoginScreen from "screens/login/login.screen";
 import RegistrationScreen from "screens/registration/registration.screen";
+import HomeScreen from "screens/home/home.screen";
 
 const Drawer = createDrawerNavigator<RootStackParamList>();
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -34,10 +35,10 @@ const AppNavigator = () => {
 
         {isAuthenticated && (
           <Stack.Group>
-            {/* <Stack.Screen
-              name={RootStackRouteNames.ShoppingCartScreenName}
-              component={}
-            /> */}
+            <Stack.Screen
+              name={RootStackRouteNames.HomeScreenName}
+              component={HomeScreen}
+            />
           </Stack.Group>
         )}
       </Stack.Group>

@@ -13,6 +13,7 @@ export type RootStackParamList = {
   [RootStackRouteNames.Drawer]: undefined;
   [RootStackRouteNames.LoginScreenName]: undefined;
   [RootStackRouteNames.RegisterScreenName]: undefined;
+  [RootStackRouteNames.HomeScreenName]: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
